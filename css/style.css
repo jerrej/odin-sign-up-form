@@ -6,7 +6,6 @@ body {
     padding: 0px;
 }
 
-/* container */
 .container {
     background-color: #000;
     color: #fff;
@@ -15,8 +14,6 @@ body {
     width: 100vw;
     height: 100vh;
 }
-
-
 
 /* left */
 .left {
@@ -33,14 +30,16 @@ body {
 .banner {
     width: inherit;
     background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
     position: fixed;
     top: 15vh;
     padding: 30px 0;
-    justify-content: center;
-    align-items: center;
 
-    box-sizing: border-box;
-    border: 1px solid red;
+    /*box-sizing: border-box;
+    border: 1px solid red;*/
 }
 
 .imgsrc {
@@ -49,8 +48,8 @@ body {
     bottom: 0;
     text-align: center;
 
-    box-sizing: border-box;
-    border: 1px solid red;
+    /*box-sizing: border-box;
+    border: 1px solid red;*/
 }
 
 /* right */
@@ -60,18 +59,46 @@ body {
     flex-flow: column nowrap;
     justify-content: center;
 
-    /* box-sizing: border-box;
-    border: 1px solid red; */
+    /*box-sizing: border-box;
+    border: 1px solid red;*/
 }
 
+.text {
+    box-sizing: border-box;
+    border: 1px solid red;
+}
 
-/* form */
-.form-control {
+.form-group {
+    background-color: #f4f4f4;
+    color: #000;
+    display:flex;
+    flex-flow: row wrap;
+
+    box-sizing: border-box;
+    border: 1px solid red;
+}
+
+.form-field {
     width: 40%;
     display: flex;
     flex-flow: column wrap;
-    padding-left: 5vh;
+    padding-top: 1vh;
     padding-bottom: 1vh;
-    /* box-sizing: border-box;
-    border: 1px solid red; */
+
+    /*box-sizing: border-box;
+    border: 1px solid red;*/
+}
+
+.form-button {
+    box-sizing: border-box;
+    border: 1px solid red;
+}
+
+.login {
+    box-sizing: border-box;
+    border: 1px solid red;
+}
+
+.p-left3{
+    padding-left: 3vw;
 }
