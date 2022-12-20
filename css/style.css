@@ -1,26 +1,77 @@
-body,html {
-    margin: 0;
-    padding: 0;
+/* simple reset */
+
+html,
+body {
+    margin: 0px;
+    padding: 0px;
 }
 
+/* container */
 .container {
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-}
-
-.left {
-    flex: 1;
+    background-color: #000;
+    color: #fff;
     display: flex;
-    align-items: center;
-}
-
-.left img {
+    flex-flow: row;
+    width: 100vw;
     height: 100vh;
-
 }
 
+
+
+/* left */
+.left {
+    width: 40vw;
+    background-image: url("../images/guillaume-le-louarn-uC21aXJ7yQs-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    /*box-sizing: border-box;
+    border: 1px solid red;*/
+}
+
+.banner {
+    width: inherit;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 15vh;
+    padding: 30px 0;
+    justify-content: center;
+    align-items: center;
+
+    box-sizing: border-box;
+    border: 1px solid red;
+}
+
+.imgsrc {
+    width: inherit;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+
+    box-sizing: border-box;
+    border: 1px solid red;
+}
+
+/* right */
 .right {
-    flex: 1;
+    width: 60vw;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+
+    /* box-sizing: border-box;
+    border: 1px solid red; */
+}
+
+
+/* form */
+.form-control {
+    width: 40%;
+    display: flex;
+    flex-flow: column wrap;
+    padding-left: 5vh;
+    padding-bottom: 1vh;
+    /* box-sizing: border-box;
+    border: 1px solid red; */
 }
