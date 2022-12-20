@@ -1,6 +1,8 @@
 :root{
-    --bgc: #000;
-    --fc: #fff;
+    --bgc: #2c3e50;
+    --bgc2: #34495e;
+    --fc: #ecf0f1;
+    --fc2: #bdc3c7;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -58,8 +60,8 @@ html {
 }
 
 .container {
-    background-color: #fff;
-    color: #000;
+    color: var(--fc);
+    background-color: var(--bgc);
     display: flex;
     flex-flow: row;
     width: 100vw;
@@ -68,7 +70,6 @@ html {
 
 .left {
     width: 40vw;
-    color: #fff;
     background-image: url("../images/guillaume-le-louarn-uC21aXJ7yQs-unsplash.jpg");
     background-position: center;
     background-size: cover;
@@ -94,7 +95,7 @@ html {
     text-align: center;
 }
 
-.right {
+.right {    
     width: 60vw;
     display: flex;
     flex-flow: column nowrap;
@@ -113,13 +114,11 @@ html {
 
 .form {
     box-shadow: 0 8px 16px -2px rgba(0, 0, 0, 0.3);
-    color: #000;
     display: flex;
     flex-flow: row wrap;
     gap: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
-
 }
 
 .form-title {
@@ -135,18 +134,45 @@ html {
     flex-flow: column wrap;
 }
 
+
 .form-field label {
     text-transform: uppercase;
     opacity: 50%;
+    margin-bottom: 5px;
+}
+
+.form-field input {
+    background-color: var(--bgc2);
+    border: 1px solid transparent;
+    border-radius: 3px;
+}
+
+.form-field input:focus {
+    outline:none;
+    border: 1px solid var(--fc2);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px var(--fc2) inset !important;
 }
 
 button {
+    color: var(--fc);
+    background-color: var(--bgc);
     font-size: 1.2em;
     font-weight: 700;
-    border: 2px solid #000;
+    border: 2px solid var(--fc);
     border-radius: 3px;
     padding: 10px 40px;
     margin: 40px auto 40px; 
+}
+
+button:hover {
+    color: var(--bgc);
+    background-color: var(--fc);
 }
 
 .pl3 {
