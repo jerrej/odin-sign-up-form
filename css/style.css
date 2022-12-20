@@ -64,8 +64,8 @@ body {
 }
 
 .text {
-    box-sizing: border-box;
-    border: 1px solid red;
+    /*box-sizing: border-box;
+    border: 1px solid red;*/
 }
 
 .form-group {
@@ -74,8 +74,8 @@ body {
     display:flex;
     flex-flow: row wrap;
 
-    box-sizing: border-box;
-    border: 1px solid red;
+    /*box-sizing: border-box;
+    border: 1px solid red;*/
 }
 
 .form-field {
@@ -90,13 +90,13 @@ body {
 }
 
 .form-button {
-    box-sizing: border-box;
-    border: 1px solid red;
+    /*box-sizing: border-box;
+    border: 1px solid red;*/
 }
 
 .login {
-    box-sizing: border-box;
-    border: 1px solid red;
+    /*box-sizing: border-box;
+    border: 1px solid red;*/
 }
 
 .p-left3{
