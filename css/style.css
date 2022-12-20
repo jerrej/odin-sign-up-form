@@ -1,3 +1,7 @@
+:root{
+    --bgc: #000;
+    --fc: #fff;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -69,9 +73,6 @@ html {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-
-    /*box-sizing: border-box;
-    border: 1px solid red;*/
 }
 
 .banner {
@@ -84,9 +85,6 @@ html {
     position: fixed;
     top: 15vh;
     padding: 30px 0;
-
-    /*box-sizing: border-box;
-    border: 1px solid red;*/
 }
 
 .imgsrc {
@@ -94,9 +92,6 @@ html {
     position: fixed;
     bottom: 0;
     text-align: center;
-
-    /*box-sizing: border-box;
-    border: 1px solid red;*/
 }
 
 .right {
@@ -104,35 +99,33 @@ html {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-
-    /*box-sizing: border-box;
-    border: 1px solid red;*/
 }
 
 .text {
-    /*box-sizing: border-box;
-    border: 1px solid red;*/
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+.text-end {
+    margin-top: 40px;
+    margin-bottom: 80px;
 }
 
 .form {
     box-shadow: 0 8px 16px -2px rgba(0, 0, 0, 0.3);
-}
-
-.form-group {
     color: #000;
     display: flex;
     flex-flow: row wrap;
     gap: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
-    /*box-sizing: border-box;
-    border: 1px solid red;*/
+
 }
 
 .form-title {
     width: 100%;
     font-size: 1.2rem;
-    font-weight: 500;
+    font-weight: 300;
 
 }
 
@@ -140,9 +133,6 @@ html {
     width: 40%;
     display: flex;
     flex-flow: column wrap;
-
-    /*box-sizing: border-box;
-    border: 1px solid red;*/
 }
 
 .form-field label {
@@ -150,14 +140,13 @@ html {
     opacity: 50%;
 }
 
-.form-button {
-    /*box-sizing: border-box;
-    border: 1px solid red;*/
-}
-
-.login {
-    /*box-sizing: border-box;
-    border: 1px solid red;*/
+button {
+    font-size: 1.2em;
+    font-weight: 700;
+    border: 2px solid #000;
+    border-radius: 3px;
+    padding: 10px 40px;
+    margin: 40px auto 40px; 
 }
 
 .pl3 {
